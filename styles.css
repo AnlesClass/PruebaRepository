@@ -1,0 +1,16 @@
+main{
+    background-color: #003853;
+}
+article{
+    background-color: #0d2b45;
+    margin: 5px 150px 5px 150px;
+}
+.hi{
+    border-color: black;
+    border-style: solid;
+    margin: 5px;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+}
+.equipo{
