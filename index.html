@@ -4,48 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videojuego Run Run</title>
-	<link rel="stylesheet" href="styles.css"
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<header>
-		<img src="LOGO.png">
-	</header>
-	<main>
-		<h1>Mostrando el Juego en Iframe</h1>
-		<div>
-		<!--Cuidado al tocar este IFrame, si no sale "Fabian pisado" es porque la has cagado.-->
-        	<iframe src="game.html" width="500" height="500" style="border: 2px solid black;"></iframe>
-		</div>
-		<section>
-			<article>
-				<h2>HISTORIA</h2>
-				<div class="hi">HISTORIA</div>
-				<div class="hi">INICIO</div>
-				<div class="hi">DESARROLLO</div>
-				<div class="hi">FINAL</div>
-			</article>
-			<article>
-				<h2>¿COMO JUGAR?</h2>
-				<img src="como.png">
-			</article>
-			<article>
-				<h2>CARACTERISTICAS DEL VIDEOJUEGO</h2>
-				<img src="caracteristicas.png">
-			</article>
-			<article>
-				<h2>EQUIPO DE DESARROLLO</h2>
-				<img class="equipo"src="lider.png">
-				<img class="equipo"src="circulo.png">
-				<img class="equipo"src="cuadrado.png">
-				<img class="equipo"src="triangulo.png">
-			</article>
-			<article>
-				<h2>METAS DE</h2>
-			</article>
-		</section>
-	</main>
-	<footer>
-		<h2>FECHA DE ULTIMA VERSION</h2>
-	</footer>
-</body>
+	<body>
+		<header>
+			<!--Fijarse si se va a usar esto-->
+			<p>¿No sé si sirva un header? - ¿Quizá para darle profesionalismo?</p>
+		</header>
+		<main>
+			<img class="adaptative-img" src="LOGO.png">
+			<div class="iframe-container">
+			<!--Cuidado al tocar este IFrame, si no sale "Fabian pisado" es porque la has cagado.-->
+				<iframe src="game.html" style="border: 2px solid black;"></iframe>
+			</div>
+			<section class="section-container">
+				<article>
+					<h2>HISTORIA</h2>
+					<div class="hi">La historia del juego como tal, en esta parte se comentará la historia, aunque sea simple, del juego de web que se creó. Testeando la longitud del texto para ver como queda.</div>
+					<div class="hi">Inicio del Proyecto</div>
+					<div class="hi">Desarrollo del Proyecto</div>
+					<div class="hi">Entregable del Proyecto</div>
+				</article>
+				<article>
+					<h2>¿COMO JUGAR?</h2>
+					<img class="adaptative-img" src="como.png">
+				</article>
+				<article>
+					<h2>CARACTERISTICAS DEL VIDEOJUEGO - HISTORIA</h2>
+					<div class="hi">Probando las características de un videojuego.</div>
+					<img class="adaptative-img" src="caracteristicas.png">
+				</article>
+				<article>
+					<h2>EQUIPO DE DESARROLLO</h2>
+					<img class="equipo"src="lider.png">
+					<img class="equipo"src="circulo.png">
+					<img class="equipo"src="cuadrado.png">
+					<img class="equipo"src="triangulo.png">
+				</article>
+				<article>
+					<h2>METAS DE <span class="span-footer">DESARROLLO</span></h2>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<h3>Ultima Fecha de Actualización: 10-10-2024</h3>
+		</footer>
+	</body>
 </html>
