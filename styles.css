@@ -1,5 +1,7 @@
 body{
     background-color: #071e29;
+    background-image: url('Patron-Fondo-Web.png');
+    background-size: 5%;
     margin: 0px;
 }
 
@@ -50,14 +52,14 @@ h3{
 }
 
 .iframe-container {
-    background-image: url('Fondo-Web.png'); /* Imagen de fondo IFrame */
+    background-image: url('Fondo-Iframe-Web.png'); /* Imagen de fondo IFrame */
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     display: flex;
     justify-content: center;  /* Centrar horizontalmente */
     align-items: center;      /* Centrar verticalmente */
-    margin: 0px 0px 30px 0px;
+    padding: 35px 0px;
 }
 
 /*Spans*/
