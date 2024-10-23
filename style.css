@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'Maincra';
+    src: url(fonts/Minecraft.ttf);
+}
+
+@font-face {
+    font-family: 'LouisGeorge';
+    src: url(fonts/Louis_George_Cafe.ttf);
+}
+
+body{
+    background-color: #003853;
+    padding: 5px 5px;
+    font-family: fantasy;
+}
+
+iframe{
+    height: 600px;
+    width: 600px;
+}
+.adaptative-img{
+    height: auto;
+    width: 100%;
+    filter:drop-shadow(0 0 10px #f92)
+}
+.iframe-container {
+    background-image: url('images/Fondo-Iframe-Web.png'); /* Imagen de fondo IFrame */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;      /* Centrar verticalmente */
+    padding: 35px 0px;
+}
+h2{
+    color: rgb(232, 210, 210);
+    filter:drop-shadow(3px 3px 0px #eb7d46);
+    letter-spacing: 10px;
+    font-family: fantasy;
+    font-size:60px;
+    font-weight: 400;
+    padding: 30px 0;
+    margin: 0;
+    text-align: center;
+}
+
+h3{
+    color: #eb7d46;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+h4{
+    color: antiquewhite;
+    text-align: center;
+}
+
+p{
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Courier';
+    margin: 0 10px;
+}
+
+/* INICIALES */
+
+#secciones-iniciales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 0;
+    height: auto;
+}
+
+/* HISTORIA */
+
+.seccion-historia{
+    background-image: url(images/Fondo-Historia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: 0 5px #16142191;
+    margin: 15px 0 0 0;
+    padding: 70px 10px;
+}
+
+.div-historia{
+    display: flex;
+    flex: content;
+    justify-content: start;
+    overflow: auto;
+}
+
+.nivel{
+    background: linear-gradient(transparent, #383535);
+    border-radius: 10px;
+    box-sizing: content-box;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.imagen-nivel{
+    border: #003853;
+    border-radius: 2.5%;
+    box-shadow: 0 4px #161421;
+    margin: 20px 0px 0px 0px;
+}
+
+/* INSTRUCCIONES */
+
+#title-instrucciones{
+    color: #dbd2fc;
+    filter: none;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.seccion-instrucciones{
+    background-color: #1411248f;
+    border: 2.5px solid #0b071f;
+    box-sizing: border-box;
+    padding: 2.5%;
+    max-width: 40%;
+}
+
+.tecla{
+    background-color: #161421;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px auto;
+}
+
+.tecla-espacio{
+    align-items: center;
+    background-color: #161421;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centrar horizontalmente */
+    line-height: 1.75;
+    margin: 10px 10%;
+    padding: 25px 0;
+}
+
+.tecla-imagen{
+    height: auto;
+    max-width: 90%;
+    padding: 15px;
+}
+
+/* ARQUITECTURA */
+
+.seccion-arquitectura{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 55%;
+}
+
+.card{
+    background-color: #1411248f;
+    border: 2.5px solid #0b071f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.image-arquitectura{
+    margin: auto 25px;
+    max-width: 20%;
+    height: auto;
+}
+
+/* DESAROLLADORES */
+
+.seccion-desarrollo{
+    background-color: #161421;
+    padding: 30px 0;
+    margin: 30px 0;
+}
+
+.div-desarrollo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.p-desarrollo{
+    text-align: center;
+    margin: 0;
+}
+
+.equipo{
+    width: 20%;
+    height: 300px;
+    display: inline-block;
+    margin: 10px 23px;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.bugs{
+    color: #ffffffd3;
+    font-family: 'Maincra';
+    font-size: large;
+    text-align: center;
+}
+
+/* METAS */
+#title-metas{
+    color: antiquewhite;
+    filter: none;
+}
+
+.seccion-metas{
+    background-color: #1411248f;
+    padding: 0 30px 40px 30px;
+}
+
+/*CLASES PERSONALES*/
+
+.custom-text{
+    font-family: 'LouisGeorge', 'Courier';
+    font-size: 18px;
+    padding: 0 0 15px 0;
+}
+
+.custom-text-02{
+    font-family: 'LouisGeorge', 'Courier';
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.custom-text-03{
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-family: 'LouisGeorge', 'Courier';
+    font-size: 1.5vw;
+}

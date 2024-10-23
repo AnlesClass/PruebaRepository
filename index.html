@@ -1,50 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videojuego Run Run</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" type="image/png" href="Favicon-Web.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/Favicon-Web.png"/>
 </head>
-	<body>
-		<main>
-			<img class="adaptative-img" src="Logo-Videojuego-Web.png">
-			<div class="iframe-container">
-			<!--Cuidado al tocar este IFrame, si no sale "Fabian pisado" es porque la has cagado.-->
-				<iframe src="game.html" style="border: 2px solid black;"></iframe>
-			</div>
-			<section class="section-container">
-				<article>
-					<h2>HISTORIA</h2>
-					<div class="hi">La historia del juego como tal, en esta parte se comentará la historia, aunque sea simple, del juego de web que se creó. Testeando la longitud del texto para ver como queda.</div>
-					<div class="hi">Inicio del Proyecto</div>
-					<div class="hi">Desarrollo del Proyecto</div>
-					<div class="hi">Entregable del Proyecto</div>
-				</article>
-				<article>
-					<h2>¿COMO JUGAR?</h2>
-					<img class="adaptative-img" src="como.png">
-				</article>
-				<article>
-					<h2>CARACTERISTICAS DEL VIDEOJUEGO - HISTORIA</h2>
-					<div class="hi">Probando las características de un videojuego.</div>
-					<img class="adaptative-img" src="caracteristicas.png">
-				</article>
-				<article>
-					<h2>EQUIPO DE DESARROLLO</h2>
-					<img class="equipo"src="lider.png">
-					<img class="equipo"src="circulo.png">
-					<img class="equipo"src="cuadrado.png">
-					<img class="equipo"src="triangulo.png">
-				</article>
-				<article>
-					<h2>METAS DE <span class="span-footer">DESARROLLO</span></h2>
-				</article>
-			</section>
-		</main>
-		<footer>
-			<h3>Ultima Fecha de Actualización: 10-10-2024</h3>
-		</footer>
-	</body>
+<body>
+    <header>
+        <img class="adaptative-img" src="images/Logo-Videojuego-Web.png">
+    </header>
+    <main>
+        <!--SECCIÓN: Videojuego-->
+        <section class="iframe-container">
+            <iframe src="game.html" style="border: 2px solid black;"></iframe>
+        </section>
+        <!--SECCIÓN: Historia-->
+        <section class="seccion-historia">
+            <div><h2>LAS AVENTURAS DEL POLLO KISQUE</h2></div>
+            <div class="div-historia">
+                <article class="nivel">
+                    <h3>Escape del Subterráneo</h3>
+                    <p class="custom-text">En un mundo pixelado, un valiente pollo comienza su travesía bajo tierra, escapando de la oscuridad de las cuevas. Mientras salta sobre abismos y evita trampas. El pollo debe encontrar la primera llave oculta, que le permitirá avanzar al siguiente nivel en su búsqueda para liberar a su familia.</p>
+                    <img class="imagen-nivel" src="images/PW_Subterraneo.png">
+                </article>
+                <article class="nivel">
+                    <h3>El reto en la superficie</h3>
+                    <p class="custom-text">Tras salir del subsuelo, el pollo llega al nivel de la tierra, donde el paisaje es más peligroso con obstáculos naturales. Aquí, deberá usar sus habilidades de salto para evitar trampas y encontrar la segunda llave, crucial para continuar su aventura y acercarse a la liberación de sus seres queridos.</p>
+                    <img class="imagen-nivel" src="images/PW_Subterraneo.png">
+                </article>
+                <article class="nivel">
+                    <h3>La batalla en el cielo</h3>
+                    <p class="custom-text">En el último nivel, el pollo vuela entre nubes, enfrentando obstáculos flotantes y enemigos que buscan detenerlo. Al recolectar la tercera llave, se abre la puerta final. Enfrentará al jefe, el villano que tiene a su familia cautiva. Solo tras derrotarlo podrá liberar a su familia y restablecer la paz en su hogar pixelado.</p>
+                    <img class="imagen-nivel" src="images/PW_Subterraneo.png">
+                </article>
+            </div>
+        </section>
+        <div id="secciones-iniciales">
+            <!--SECCION: Instrucciones-->
+            <section class="seccion-instrucciones">
+                <h2 id="title-instrucciones">Instrucciones</h2>
+    
+                <div>
+                    <p class="custom-text-03">El personaje se mueve utilizando las flechas izquierda y derecha. ¿No se supone que esto serviría para algo más?¡Que desarrolladores tan flojos!.</p>
+                    <div class="tecla">
+                        <img class="tecla-imagen" src="images/Flecha-Izquierda.png">
+                        <img class="tecla-imagen" src="images/Flecha-Derecha.png">
+                    </div>
+                </div>
+    
+                <div>
+                    <p class="custom-text-03">Tanto para subir como para bajar escaleras, se usan flechas direccionales arriba y abajo. ¡También sirve para pasar por puertas!</p>
+                    <div class="tecla">
+                        <img class="tecla-imagen" src="images/Flecha-Arriba.png">
+                        <img class="tecla-imagen" src="images/Flecha-Abajo.png">
+                    </div>
+                </div>
+    
+                <div>
+                    <p class="custom-text-03">Ahh..si. En esta parte debería ir algún dato super importante para el videojuego, pero realmente estoy cansado de escribir. Usa la tecla espacio para saltar.</p>
+                    <div class="tecla">
+                        <img class="tecla-imagen" src="images/Barra-Espaciadora.png">
+                    </div>
+                </div>
+    
+            </section>
+            <!--SECCIÓN: Arquitectura-->
+            <section class="seccion-arquitectura">
+    
+                <article class="card">
+                    <img class="image-arquitectura"src="images/Logo-Godot.png">
+                    <div>
+                        <h3>Desarrollado en GODOT</h3>
+                        <p class="custom-text-03">Este emocionante juego fue creado utilizando el motor de videojuegos Godot, una potente herramienta de desarrollo 2D y 3D, multiplataforma y de código abierto. Gracias a Godot, el juego ofrece una experiencia fluida y optimizada, permitiendo que los jugadores disfruten del mundo pixelado y las dinámicas de juego en diversas plataformas.</p>
+                    </div>
+                </article>
+    
+                <article class="card">
+                    <img class="image-arquitectura"src="images/Logo-Aseprite.png">
+                    <div>
+                        <h3>Diseño visual en Aseprite</h3>
+                        <p class="custom-text-03">Todos los gráficos y animaciones de este juego han sido diseñados en Aseprite, una herramienta ideal para la creación de arte en pixel y animaciones 2D. Desde los personajes hasta los detalles de los niveles, cada elemento visual ha sido cuidadosamente animado para ofrecer una estética retro y encantadora.</p>
+                    </div>
+                </article>
+    
+                <article class="card">
+                    <img class="image-arquitectura"src="images/Logo-C-Sharp.png">
+                    <div>
+                        <h3>Programación en GDScript y C#</h3>
+                        <p class="custom-text-03">El juego está programado principalmente en GDScript, el lenguaje nativo de Godot, complementado con C# para manejar partes clave del código. Esta combinación permite un desarrollo flexible y eficiente, garantizando que las mecánicas del juego sean fluidas y estén bien optimizadas para cualquier plataforma.</p>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+        <!--SECCIÓN, Equipo de Desarrollo-->
+        <section class="seccion-desarrollo">
+            <h2>EQUIPO DE DESARROLLO</h2>
+            <div class="div-desarrollo">
+                <div class="equipo">
+                    <img src="images/DV-Lider.png">
+                    <h4>Anderson Josue <br> Molina Cruz</h4>
+                    <p class="p-desarrollo">(molin4cruz@gmail.com)</p>
+                </div>
+                <div class="equipo">
+                    <img src="images/DV-Circulo.png">
+                    <h4>Marco Tulio <br> Gentille Pastor</h4>
+                    <p class="p-desarrollo">(marcogentille14@gmail.com)</p>
+                </div>
+                <div class="equipo">
+                    <img src="images/DV-Cuadrado.png">
+                    <h4>Jose Miguel <br> Jacho Apcho</h4>
+                    <p class="p-desarrollo">(josejacho96@gmail.com)</p>
+                </div>
+                <div class="equipo">
+                    <img src="images/DV-Triangulo.png">
+                    <h4>Luis Fabian <br> Ramos Vasquez</h4>
+                    <p class="p-desarrollo">(fr692261@gmail.com)</p>
+                </div>
+            </div>
+            <div>
+                <p class="bugs">ANTE FALLAS O ERRORES DE JUEGO, ENVIAR UN CORREO A ALGÚN MIEMBRO DEL EQUIPO DE DESARROLLO</p>
+            </div>
+        </section>
+        <!--SECCIÓN, Metas del proyecto.-->
+        <section class="seccion-metas">
+            <h2 id="title-metas">METAS</h2>
+            <div class>
+                <p class="custom-text-02">El objetivo principal del desarrollo de este juego es ofrecer una experiencia entretenida y accesible para todos los jugadores, utilizando herramientas modernas y eficientes. El uso del motor Godot permite llevar el juego a múltiples plataformas, garantizando un rendimiento optimizado tanto en dispositivos móviles como en computadoras. Además, la implementación de gráficos en pixel art con Aseprite busca capturar la esencia retro de los clásicos juegos de plataformas, brindando un toque nostálgico, pero con mecánicas y animaciones modernas.</p>
+                <p class="custom-text-02">Por otro lado, al emplear GDScript y C# como lenguajes de programación, el equipo de desarrollo se ha enfocado en crear un código robusto y flexible que permita futuras actualizaciones y expansiones del juego. La meta es no solo ofrecer una aventura emocionante en su lanzamiento, sino también poder añadir contenido y mejorar las funcionalidades de manera continua, asegurando la mejor experiencia para la comunidad de jugadores.</p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
 </html>
