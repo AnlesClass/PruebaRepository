@@ -1,2 +1,2 @@
 # Primer Commit
-Aqui inicia esta prueba.
+Se ha cambiado el nombre del repositorio, anteriormente se llamaba "PruebaRepository" pero debido a las necesidades y a los avances entonces se ha cambiado, este commit de README solo sirve para probar si todo funciona bien.
