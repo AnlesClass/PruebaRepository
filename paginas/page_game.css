@@ -24,7 +24,7 @@ iframe{
     filter:drop-shadow(0 0 10px #f92)
 }
 .iframe-container {
-    background-image: url('images/Fondo-Iframe-Web.png'); /* Imagen de fondo IFrame */
+    background-image: url('/images/Fondo-Iframe-Web.png'); /* Imagen de fondo IFrame */
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -81,7 +81,7 @@ p{
 /* HISTORIA */
 
 .seccion-historia{
-    background-image: url(images/Fondo-Historia.jpg);
+    background-image: url(/images/Fondo-Historia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
